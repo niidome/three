@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const screen = {
+            width: 640,
+            height: 480,
+            color: '#FFF',
+            area: () => { }
+        };
+
+        const { width, height } = screen;
+        console.log('幅:' + width, '高さ:' + height);
+
+        const object2 = {
+            width,
+            height,
+            area: () => { }
+        }
+        console.log(object2);
+
+        const array1 = [1, 2, 3, 4, 5];
+        const array2 = [...array1, 6, 7, 8];
+        console.log('spred:', array2);
+
+        const array3 = array1.concat([6, 7, 8]);
+        console.log('concat:', array3);
+
+        const string1 = 'こんにちは"テスト"' + "こんばんは'テスト'";
+        console.log(string1);
+
+        const string2 = 'こんにちは\'テスト\'${width}x${height}';
+        console.log(string2);
+
+        const string3 = `幅: ${width} x 高さ: ${height}`;
+        console.log('str3:', string3);
+
+        const tag1 = '<input name="text">';
+
+        const string4 = `テスト
+テスト
+テスト`;
+        console.log(string4);
+
+        const string5 = 'こんにちは' + "\n" + 'こんばんは';
+        console.log('str5:', string5);
+
+        console.log('テンプレートリテラルで計算:', `1 + 1 = ${1 + 1}`);
+        for (let i = 1; i <= 10; i++) {
+            console.log(`${i}: 5 * ${i} = ${5 * i}`);
+        }
+
+        ['あか', 'あお', 'きいろ'].forEach((item, index) => {
+            const no = index + 1;
+            console.log(`${no}: ${item}`);
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
