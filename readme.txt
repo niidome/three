@@ -1,5 +1,4 @@
-次回は前提条件のコードを斜め読み
-
+次回、照明の続き (ambient, hemisphere までおわり)
 
 local では module の import はできない。local サーバを起動する。
 python -m http.server 8000
